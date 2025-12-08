@@ -60,6 +60,39 @@ body {
     text-shadow: 2px 2px 0 #3f3f3f;
 }
 
+/* DROP DOWN MENU*/
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border: 2px solid var(--mc-dirt);      
+    border-radius: 0;                      
+    padding: 0;                            
+    margin-top: 10px;                      
+    min-width: 200px;                      
+}
+
+/* Estilo de los enlaces (Discord, Arte, etc.) */
+.dropdown-item {
+    color: var(--mc-text);                 
+    font-size: 1.2rem;                     
+    text-transform: uppercase;             
+    padding: 12px 20px;                    
+    font-family: inherit;                  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+/* Quitamos la línea del último elemento para que se vea limpio */
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Efecto al pasar el mouse por encima de las opciones */
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.15); 
+    color: var(--mc-gold);                 
+    text-shadow: 2px 2px 0 #3f3f3f;       
+}
+
 /* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/mc-principal-portada.png');
